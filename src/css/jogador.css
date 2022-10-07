@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.fundo {
+  width: 100vw;
+  height: 20.3rem;
+}
+
+.logoFundo {
+  width: 100vw;
+  height: 20rem;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.menuLu {
+  list-style: none;
+  display: flex;
+  margin-left: 3rem;
+  position: absolute;
+  top: 17.5rem;
+}
+
+.menuLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 4rem;
+  background-color: #1359AA;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.menuA {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+}
+
+main {
+  width: 100vw;
+  margin-top: 20rem;
+}

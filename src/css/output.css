@@ -1,0 +1,1268 @@
+/*
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+::before,
+::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+::-webkit-backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+}
+
+/* colocado por min */
+
+.PlayerCarousel-module__container--bt7UO {
+  margin-bottom: 5rem;
+}
+
+.PlayerCarousel-module__container--bt7UO .flickity-viewport {
+  margin: 0 auto;
+}
+
+.PlayerCarousel-module__container--bt7UO .flickity-viewport:before,
+.PlayerCarousel-module__container--bt7UO .flickity-viewport:after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 100' preserveAspectRatio='none'%3E%3Cpolygon fill='%23FFFFFF' points='10,100 0,100 0,0 10,0 1,50'/%3E%3C/svg%3E") left center/100% 100%;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.2rem;
+  z-index: 2;
+}
+
+.PlayerCarousel-module__container--bt7UO .flickity-viewport:after {
+  left: auto;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.pageEditing .PlayerCarousel-module__container--bt7UO .PlayerCarousel-module__item--EXRgP {
+  width: 100%;
+}
+
+.PlayerCarousel-module__item--EXRgP {
+  padding: 0 1.3rem 0;
+  width: 50%;
+}
+
+@media (min-width: 480px) {
+  .PlayerCarousel-module__item--EXRgP {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .PlayerCarousel-module__item--EXRgP {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .PlayerCarousel-module__item--EXRgP {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .PlayerCarousel-module__item--EXRgP {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .PlayerCarousel-module__item--EXRgP {
+    width: 16.666%;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .PlayerCarousel-module__container--bt7UO:before,
+  .PlayerCarousel-module__container--bt7UO:after {
+    width: 1rem;
+  }
+
+  .PlayerCarousel-module__item--EXRgP {
+    padding: 0 1.08rem 0;
+  }
+}
+
+.PlayerThumbnail-module__PlayerThumbnail--27Y4L {
+  border: 0.05rem solid #E6E6E6;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  will-change: transform;
+  /* This is used to fix image lazyload with flickity carousel */
+}
+
+.PlayerThumbnail-module__PlayerThumbnail--27Y4L.PlayerThumbnail-module__imagePaddingHeight--1ml6a .PlayerThumbnail-module__image--1TMr_ {
+  position: relative;
+}
+
+.PlayerThumbnail-module__PlayerThumbnail--27Y4L.PlayerThumbnail-module__imagePaddingHeight--1ml6a .PlayerThumbnail-module__image--1TMr_:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.PlayerThumbnail-module__PlayerThumbnail--27Y4L.PlayerThumbnail-module__imagePaddingHeight--1ml6a .PlayerThumbnail-module__image--1TMr_ img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  width: 100%;
+}
+
+.pageEditing .PlayerThumbnail-module__PlayerThumbnail--27Y4L {
+  min-height: 20rem;
+}
+
+.pageEditing .PlayerThumbnail-module__PlayerThumbnail--27Y4L .PlayerThumbnail-module__stats--TCgax {
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.PlayerThumbnail-module__PlayerThumbnailStats--1O1zF {
+  height: calc(100% - 2rem);
+}
+
+.PlayerThumbnail-module__content--2p6IG {
+  padding: 1.8rem 1.4rem 2rem 1.4rem;
+  text-transform: uppercase;
+}
+
+.PlayerThumbnail-module__link--3s667 {
+  display: block;
+}
+
+.PlayerThumbnail-module__image--1TMr_ {
+  line-height: 0;
+}
+
+.PlayerThumbnail-module__playerName--2bbtZ {
+  color: #C2002F;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.PlayerThumbnail-module__playerPosition--KP4od {
+  color: #808080;
+  display: block;
+}
+
+.PlayerThumbnail-module__stats--TCgax {
+  background-color: #FFFFFF;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 2rem;
+  position: absolute;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  -webkit-transition: -webkit-transform 275ms ease;
+  transition: -webkit-transform 275ms ease;
+  -o-transition: transform 275ms ease;
+  transition: transform 275ms ease;
+  transition: transform 275ms ease, -webkit-transform 275ms ease;
+  width: 100%;
+  will-change: transform;
+}
+
+.PlayerThumbnail-module__statsValue--28-Ju {
+  color: black;
+  font-size: 2.4rem;
+}
+
+.PlayerThumbnail-module__statsName--1QKTL {
+  color: #BFBFBF;
+  font-size: 1rem;
+}
+
+.PlayerThumbnail-module__stats--TCgax li {
+  opacity: .1;
+  -webkit-transition: all 245ms ease 175ms;
+  -o-transition: all 245ms ease 175ms;
+  transition: all 245ms ease 175ms;
+}
+
+.PlayerThumbnail-module__stats1--2eEJ6 li {
+  width: calc(100% - 1rem);
+}
+
+.PlayerThumbnail-module__stats2--QxkSC li {
+  width: calc(50% - 1rem);
+}
+
+.PlayerThumbnail-module__stats3--3kNTk li {
+  width: calc(33.33% - 1rem);
+}
+
+.PlayerThumbnail-module__stats4--N1kb_ li {
+  width: calc(25% - 1rem);
+}
+
+.PlayerThumbnail-module__stats5--3IVri li {
+  width: calc(20% - 1rem);
+}
+
+@media (min-width: 1025px) {
+  .PlayerThumbnail-module__PlayerThumbnail--27Y4L {
+    border-radius: .33rem;
+    font-size: 1rem;
+  }
+
+  .PlayerThumbnail-module__PlayerThumbnail--27Y4L .PlayerThumbnail-module__image--1TMr_ img {
+    -webkit-transition: -webkit-transform 275ms ease;
+    transition: -webkit-transform 275ms ease;
+    -o-transition: transform 275ms ease;
+    transition: transform 275ms ease;
+    transition: transform 275ms ease, -webkit-transform 275ms ease;
+  }
+
+  .PlayerThumbnail-module__PlayerThumbnail--27Y4L:hover .PlayerThumbnail-module__stats--TCgax {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .PlayerThumbnail-module__PlayerThumbnail--27Y4L:hover .PlayerThumbnail-module__stats--TCgax li {
+    opacity: 1;
+  }
+
+  .PlayerThumbnail-module__PlayerThumbnail--27Y4L:hover .PlayerThumbnail-module__content--2p6IG {
+    -webkit-transform: translate3d(0, -1.66rem, 0);
+    transform: translate3d(0, -1.66rem, 0);
+  }
+
+  .PlayerThumbnail-module__PlayerThumbnail--27Y4L:hover.PlayerThumbnail-module__imagePaddingHeight--1ml6a .PlayerThumbnail-module__image--1TMr_ img,
+  .PlayerThumbnail-module__PlayerThumbnail--27Y4L:hover .PlayerThumbnail-module__image--1TMr_ img {
+    -webkit-transform: translate3d(0, -0.833rem, 0);
+    transform: translate3d(0, -0.833rem, 0);
+  }
+
+  .PlayerThumbnail-module__PlayerThumbnailStats--1O1zF:hover .PlayerThumbnail-module__content--2p6IG {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .PlayerThumbnail-module__content--2p6IG {
+    background: #FFFFFF;
+    padding: 1.5rem 1.16rem 1.66rem 1.16rem;
+    -webkit-transition: all ease 250ms;
+    -o-transition: all ease 250ms;
+    transition: all ease 250ms;
+  }
+
+  .PlayerThumbnail-module__playerName--2bbtZ {
+    margin-bottom: .25rem;
+  }
+
+  .PlayerThumbnail-module__stats--TCgax {
+    padding: 1.66rem 0.5rem;
+  }
+
+  .PlayerThumbnail-module__statsValue--28-Ju {
+    font-size: 2rem;
+  }
+
+  .PlayerThumbnail-module__statsName--1QKTL {
+    font-size: .83rem;
+  }
+}
+
+.PlayerGrid-module__container--eFVg3 {
+  margin-bottom: 5rem;
+}
+
+.PlayerGrid-module__container--eFVg3 .col {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.PlayerGrid-module__column--29Vq6 {
+  margin-bottom: 2.4rem;
+}
+
+.PlayerGrid-module__carousel--4D68O {
+  margin-bottom: 6rem;
+}
+
+.PlayerGrid-module__carousel--4D68O .flickity-viewport {
+  margin: 0 -1.3rem;
+}
+
+.PlayerGrid-module__carousel--4D68O .flickity-viewport:before,
+.PlayerGrid-module__carousel--4D68O .flickity-viewport:after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 100' preserveAspectRatio='none'%3E%3Cpolygon fill='%23FFFFFF' points='10,100 0,100 0,0 10,0 1,50'/%3E%3C/svg%3E") left center/100% 100%;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.2rem;
+  z-index: 2;
+}
+
+.PlayerGrid-module__carousel--4D68O .flickity-viewport:after {
+  left: auto;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.PlayerGrid-module__item--2LyPU {
+  padding: 0 1.3rem 0;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .PlayerGrid-module__item--2LyPU {
+    width: 33.334%;
+  }
+}
+
+@media (min-width: 992px) {
+  .PlayerGrid-module__item--2LyPU {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .PlayerGrid-module__item--2LyPU {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .PlayerGrid-module__item--2LyPU {
+    width: 16.666%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .PlayerGrid-module__column--29Vq6 {
+    margin-bottom: 2rem;
+  }
+
+  .PlayerGrid-module__carousel--4D68O {
+    margin-bottom: 5rem;
+  }
+
+  .flickity-viewport {
+    margin: 0 -1.3rem;
+  }
+
+  .flickity-viewport:before,
+  .flickity-viewport:after {
+    width: 1rem;
+  }
+}
+
+.P1Player-module__P1Player--3FZMW {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto calc(20px * 2);
+  max-width: 100%;
+  width: 164rem;
+}
+
+.P1Player-module__mediaColumn--G7CaF {
+  position: relative;
+  width: 100%;
+}
+
+.P1Player-module__mediaColumn--G7CaF video,
+.P1Player-module__mediaColumn--G7CaF img {
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+
+  .P1Player-module__mediaColumn--G7CaF video,
+  .P1Player-module__mediaColumn--G7CaF img {
+    position: absolute;
+  }
+}
+
+.P1Player-module__textColumn--24s4m {
+  margin-top: -2rem;
+  padding: 0 2rem;
+}
+
+.P1Player-module__textColumn--24s4m h1 {
+  color: #C2002F;
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-2px);
+  transform: translateX(-2px);
+}
+
+.P1Player-module__textColumn--24s4m ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.P1Player-module__textColumn--24s4m ul li {
+  color: #808080;
+  font-size: 1.2rem;
+  letter-spacing: .06rem;
+  margin: 0 0 3rem;
+  padding-right: 3rem;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.P1Player-module__textColumn--24s4m ul li span {
+  color: #212844;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: .4em;
+}
+
+.P1Player-module__sectionLabelContainer--3Zwp5 {
+  display: none;
+}
+
+.P1Player-module__socialLinksMobileContainer--12VCW {
+  bottom: 2rem;
+  left: 2.2rem;
+  position: absolute;
+}
+
+.P1Player-module__socialLinksDesktopContainer--R-NsW {
+  display: none;
+}
+
+.P1Player-module__highlightStatsContainer--3rsGk {
+  margin-top: 2rem;
+}
+
+.P1Player-module__highlightStatsContainer--3rsGk>div {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .P1Player-module__P1Player--3FZMW h1 {
+    font-size: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  .P1Player-module__textColumn--24s4m {
+    margin: 0;
+    -ms-flex-order: 1;
+    order: 1;
+    padding: 0 calc(20px * 2);
+    width: 100%;
+  }
+
+  .P1Player-module__textColumn--24s4m ul li {
+    font-size: 1.6rem;
+    margin-bottom: 4.49rem;
+  }
+
+  .P1Player-module__textColumn--24s4m ul li span {
+    font-size: 2.1rem;
+    margin-top: 0.75rem;
+  }
+
+  .P1Player-module__textColumn--24s4m:after {
+    width: 15rem;
+  }
+
+  .P1Player-module__sectionLabelContainer--3Zwp5 {
+    margin-bottom: 9.33rem;
+  }
+
+  .P1Player-module__socialLinksMobileContainer--12VCW {
+    -webkit-transform: scale(2) translate(40%, -1.5rem);
+    transform: scale(2) translate(40%, -1.5rem);
+  }
+
+  .P1Player-module__highlightStatsContainer--3rsGk {
+    margin-top: 3.2rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .P1Player-module__P1Player--3FZMW {
+    margin: 0 auto calc(20px * 4);
+  }
+
+  .P1Player-module__P1Player--3FZMW h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .P1Player-module__textColumn--24s4m {
+    background-image: url(/dist/ussf/static/media/profile-chevron.7d3bb1b8.svg);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    margin: 0;
+    -ms-flex-order: 1;
+    order: 1;
+    padding: 0 0 0 8.3rem;
+    width: 50%;
+  }
+
+  .P1Player-module__textColumn--24s4m ul li {
+    font-size: 1.2rem;
+    margin-bottom: 3.166rem;
+  }
+
+  .P1Player-module__textColumn--24s4m ul li span {
+    font-size: 1.4rem;
+    margin-top: .5rem;
+  }
+
+  .P1Player-module__textColumn--24s4m:after {
+    width: 10rem;
+  }
+
+  .P1Player-module__textColumn--24s4m h1 {
+    padding-right: 8.5rem;
+  }
+
+  .P1Player-module__sectionLabelContainer--3Zwp5 {
+    display: block;
+    margin-bottom: 9.33rem;
+  }
+
+  .P1Player-module__mediaColumn--G7CaF {
+    -ms-flex-order: 2;
+    order: 2;
+    width: 50%;
+  }
+
+  .P1Player-module__mediaColumn--G7CaF img {
+    width: 100%;
+  }
+
+  .P1Player-module__socialLinksMobileContainer--12VCW {
+    display: none;
+  }
+
+  .P1Player-module__socialLinksDesktopContainer--R-NsW {
+    display: block;
+    margin-bottom: 3.13rem;
+    max-width: 30rem;
+  }
+
+  .P1Player-module__highlightStatsContainer--3rsGk {
+    margin-top: 3.6rem;
+  }
+}
+
+.P1Competition-module__playerImageContainer--2Uabd {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 24vw;
+}
+
+.P1Competition-module__playerImageContainerHome--2sZiO {
+  bottom: 22%;
+  left: unset;
+  right: 94%;
+  top: unset;
+}
+
+.P1Competition-module__playerImageContainerAway--26-61 {
+  bottom: 22%;
+  left: 94%;
+  right: unset;
+  top: unset;
+}
+}
+
+@media (min-width: 1025px) {
+  .P1Competition-module__playerImageContainer--2Uabd {
+    width: 29vw;
+  }
+
+  .P1Competition-module__playerImageContainerHome--2sZiO {
+    bottom: 10%;
+    max-width: 31.25rem;
+    right: 96%;
+  }
+
+  .P1Competition-module__playerImageContainerAway--26-61 {
+    bottom: 10%;
+    left: 96%;
+    max-width: 31.25rem;
+  }
+
+  .P1Match-module__playerImageContainer--LMGlA {
+    display: inline-block;
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  .P1Match-module__playerImageContainer--LMGlA img {
+    z-index: 1;
+  }
+
+  .P1Match-module__playerImageContainerHome--10pKh,
+  .P1Match-module__playerImageContainerAway--3b2qu {
+    position: relative;
+    width: 50%;
+  }
+
+  .P1Match-module__playerImageContainerHome--10pKh {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .P1Match-module__playerImageContainerAway--3b2qu {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  @media (min-width: 768px) {
+    .P1Match-module__playerImageContainer--LMGlA {
+      display: block;
+      margin-top: 2rem;
+      max-width: 36.67rem;
+      width: 100%;
+    }
+
+    .P1Match-module__playerImageContainer--LMGlA img {
+      left: 0;
+      position: absolute;
+    }
+
+    .P1Match-module__playerImageContainerHome--10pKh {
+      -ms-flex-order: 1;
+      order: 1;
+    }
+
+    .P1Match-module__playerImageContainerAway--3b2qu {
+      -ms-flex-order: 2;
+      order: 2;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .P1Match-module__playerImageContainer--LMGlA {
+      margin-top: 3rem;
+    }
+  }
+
+  @media (min-width: 1240px) {
+    .P1Match-module__playerImageContainer--LMGlA {
+      margin-top: 1.67rem;
+    }
+  }

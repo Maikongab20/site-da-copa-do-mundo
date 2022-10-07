@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.fundo {
+  width: 100vw;
+  height: 20.3rem;
+}
+
+.logoFundo {
+  width: 100vw;
+  height: 20rem;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.menuLu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  position: absolute;
+  top: 17.5rem;
+}
+
+.menuLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 4rem;
+  background-color: #1359AA;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.menuA {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+}
+
+.treino {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.titulo {
+  margin: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.paragrafo {
+  width: 90%;
+  height: auto;
+  font-size: 2rem;
+  text-align: justify;
+  margin: 2rem;
+}
+
+.container {
+  display: flex;
+}
+
+.foto {
+  width: 50%;
+  margin: 2rem;
+}
+
+.container2 {
+  width: 50%;
+  padding-top: 8%;
+}
+
+.subtitulo {
+  margin: 2rem;
+  font-size: 3rem;
+  text-align: end;
+  color: #E90C0C;
+}
+
+.meio {
+  width: 95%;
+  margin: 3rem;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+/* media */
+
+@media(max-width:1024px) {
+  html {
+    font-size: 40%;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+}
+
+@media(max-width:425px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media(max-width:375px) {
+  html {
+    font-size: 20%;
+  }
+
+  .menuA {
+    font-size: 3rem;
+  }
+
+  .paragrafo {
+    font-size: 3rem;
+  }
+
+  .meio {
+    font-size: 3rem;
+  }
+
+  .subtitulo {
+    font-size: 4rem;
+  }
+}

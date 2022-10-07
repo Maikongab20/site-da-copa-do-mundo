@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.fundo {
+  width: 100vw;
+  height: 20.3rem;
+}
+
+.logoFundo {
+  width: 100vw;
+  height: 20rem;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.menuLu {
+  list-style: none;
+  display: flex;
+  margin-left: 3rem;
+  position: absolute;
+  top: 17.5rem;
+}
+
+.menuLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 4rem;
+  background-color: #1359AA;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.menuA {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+}
+
+/* main */
+.foto {
+  margin-top: 4rem;
+  width: 100vw;
+  height: 30%;
+}
+
+.titulo {
+  margin-top: 4rem;
+  font-size: 5rem;
+  margin-left: 6rem;
+}
+
+.subtitulo {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+div {
+  display: flex;
+}
+
+.img1 {
+  width: 50rem;
+  height: 80rem;
+  margin-left: 1rem;
+}
+
+.img2 {
+  width: 50rem;
+  height: 80rem;
+  margin-right: 1rem;
+}
+
+.texto {
+  width: 80rem;
+  height: 5rem;
+  font-size: 2em;
+  text-align: justify;
+  margin-bottom: 9rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+
+.texto2 {
+  width: 80rem;
+  height: 5rem;
+  font-size: 2em;
+  text-align: justify;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 9rem;
+
+}
+
+.subtitulo2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  margin-left: 5rem;
+
+}
+
+.interno {
+  flex-direction: column;
+}
+
+/* media */
+
+@media(max-width:1440px) {
+  html {
+    font-size: 70%;
+  }
+
+  .logoFundo {
+    width: 130rem;
+    height: 15rem;
+  }
+
+  .logo {
+    width: 8rem;
+  }
+
+  .menuLu {
+    top: 12rem;
+  }
+
+  .foto {
+    width: 129rem;
+  }
+
+  .img1 {
+    width: 30rem;
+  }
+
+  .img2 {
+    width: 30rem;
+  }
+
+  .texto {
+    width: 60rem;
+  }
+
+  .texto2 {
+    width: 60rem;
+    margin-top: 1rem;
+  }
+
+  .subtitulo2 {
+    margin-top: 10rem;
+  }
+
+  .subtitulo {
+    width: 120rem;
+  }
+
+}
+
+@media(max-width:768px) {
+
+  html {
+    font-size: 38%;
+  }
+
+  .logo {
+    margin-left: 1rem;
+  }
+}
